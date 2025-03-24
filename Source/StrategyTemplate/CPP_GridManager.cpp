@@ -25,3 +25,8 @@ void ACPP_GridManager::Tick(float DeltaTime)
 
 }
 
+FVector ACPP_GridManager::FindNearestSupplyBaseToUnit()
+{
+
+}
+
