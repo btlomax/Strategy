@@ -27,12 +27,8 @@ void ACPP_GridManager::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-/// <summary>
-/// Find nearest supply building
-/// </summary>
-/// <param name="Tag"></param>
-/// <returns></returns>
-FVector ACPP_GridManager::GoToNearestSupplyBuilding(FName Tag)
+
+void ACPP_GridManager::GoToNearestSupplyBuilding(FName Tag)
 {
 	AActor* nearestBuilding = nullptr;
 	float distanceToClosestBuilding = TNumericLimits<float>::Max();
