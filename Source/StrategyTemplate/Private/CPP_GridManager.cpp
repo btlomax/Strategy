@@ -60,7 +60,7 @@ AActor* ACPP_GridManager::FindClosestSupplyBuilding(FName Tag)
 
 void ACPP_GridManager::RetreatToNearestSupplyBuilding(AActor* nearestBuilding)
 {
-	
+	SetActorLocation(nearestBuilding->GetActorLocation());
 }
 
 
