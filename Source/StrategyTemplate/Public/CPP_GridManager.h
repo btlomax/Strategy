@@ -25,7 +25,11 @@ public:
 
 public:
 	UFUNCTION(BlueprintCallable)
-	void GoToNearestSupplyBuilding(FName Tag);
+	AActor* FindClosestSupplyBuilding(FName Tag);
+
+public:
+	UFUNCTION(BlueprintCallable)
+		void RetreatToNearestSupplyBuilding(AActor* nearestBuilding);
 		
 
 };

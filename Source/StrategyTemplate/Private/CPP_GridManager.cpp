@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "Kismet/KismetMathLibrary.h"
 
+
 // Sets default values
 ACPP_GridManager::ACPP_GridManager()
 {
@@ -32,7 +33,7 @@ void ACPP_GridManager::Tick(float DeltaTime)
 /// </summary>
 /// <param name="Tag"></param>
 /// <returns></returns>
-FVector ACPP_GridManager::GoToNearestSupplyBuilding(FName Tag)
+AActor* ACPP_GridManager::FindClosestSupplyBuilding(FName Tag)
 {
 	AActor* nearestBuilding = nullptr;
 	float distanceToClosestBuilding = TNumericLimits<float>::Max();
@@ -53,5 +54,14 @@ FVector ACPP_GridManager::GoToNearestSupplyBuilding(FName Tag)
 			nearestBuilding = Actor;
 		}
 	}
+
+	return nearestBuilding;
 }
+
+void ACPP_GridManager::RetreatToNearestSupplyBuilding(AActor* nearestBuilding)
+{
+	
+}
+
+
 
