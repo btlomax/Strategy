@@ -10,13 +10,34 @@ class STRATEGYTEMPLATE_API ACPP_GridManager : public AActor
 {
 	GENERATED_BODY()
 
-public:
-	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	int TileSize;
+private:
+	 double TileSize;
 
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	TMap<AActor*, FVector> SingleTile; 
+	 double getTileSize()
+	{
+		return TileSize;	
+	}
+
+	 void setTile(double value)
+	{
+		TileSize = value;
+	}
+
+public:
+	TMap<AActor*, FVector> SingleTile;
+
+public:
+	UFUNCTION(BlueprintCallable)
+	TMap<AActor*, FVector> getSingleTile()
+	{
+		return SingleTile;
+	}
+
+public:
+	UFUNCTION(BlueprintCallable)
+	void UpdateUnitGridPosition(AActor* unit);
+	
 	
 public:	
 	// Sets default values for this actor's properties
@@ -36,7 +57,11 @@ public:
 
 public:
 	UFUNCTION(BlueprintCallable)
-	void RetreatToNearestSupplyBuilding(AActor* nearestBuilding);
+	void PrintTileContents(TMap<AActor*, FVector> tile);
+
+public:
+	UFUNCTION(BlueprintCallable)
+	void RetreatToNearestSupplyBuilding(AActor* nearestBuilding, AActor* unitToMove);
 	
 public:
 	UFUNCTION(BlueprintCallable)

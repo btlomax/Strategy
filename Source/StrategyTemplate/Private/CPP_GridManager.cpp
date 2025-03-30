@@ -3,14 +3,17 @@
 #include "GameFramework/Actor.h"
 #include "CPP_GridManager.h"
 
+#include <string>
+
 #include "AIController.h"
+#include "AIHelpers.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 
 // Sets default values
 ACPP_GridManager::ACPP_GridManager()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	TileSize = 100;
 }
@@ -19,6 +22,8 @@ ACPP_GridManager::ACPP_GridManager()
 void ACPP_GridManager::BeginPlay()
 {
 	Super::BeginPlay();
+	SingleTile.Empty();
+}
 }
 
 // Called every frame
@@ -26,6 +31,7 @@ void ACPP_GridManager::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
+
 /// <summary>
 /// Find nearest supply building
 /// </summary>
@@ -58,10 +64,10 @@ AActor* ACPP_GridManager::FindClosestSupplyBuilding(FName Tag)
 	return nearestBuilding;
 }
 
-void ACPP_GridManager::RetreatToNearestSupplyBuilding(AActor* nearestBuilding)
+void ACPP_GridManager::RetreatToNearestSupplyBuilding(AActor* nearestBuilding, AActor* unitToMove)
 {
 	FVector location = nearestBuilding->GetActorLocation();
-	FVector currentLocation = GetActorLocation();
+	FVector currentLocation = unitToMove->GetActorLocation();
 	FVector newLocation(location.X, location.Y, currentLocation.Z);
 
 	FString strLocation = newLocation.ToString();
@@ -74,25 +80,61 @@ FVector ACPP_GridManager::CalculateGridKey(AActor* currentUnit)
 {
 	//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, TEXT("Made it to start of CalculateGridKey"));
 	FVector currentLocation = currentUnit->GetActorLocation();
-	
-	float gridKeyX = UKismetMathLibrary::FFloor(currentLocation.X / TileSize);
-	float gridKeyY = UKismetMathLibrary::FFloor(currentLocation.Y / TileSize);
+
+	float gridKeyX = UKismetMathLibrary::FFloor(currentLocation.X / getTileSize());
+	float gridKeyY = UKismetMathLibrary::FFloor(currentLocation.Y / getTileSize());
 
 	//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, TEXT("Made it to end of CalculateGridKey"));
+	//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FVector(gridKeyX, gridKeyY, currentLocation.Z).ToString());
 	return FVector(gridKeyX, gridKeyY, currentLocation.Z);
 }
 
 void ACPP_GridManager::RegisterUnitInGrid(AActor* currentUnit)
 {
 	//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, TEXT("Made it to start of register unit in grid."));
-	AActor* unit = currentUnit;
 	FVector unitGridKey = CalculateGridKey(currentUnit);
+	
 
-	if (!SingleTile.Find(currentUnit) && currentUnit)
+	if (SingleTile.Find(currentUnit) && currentUnit)
 	{
 		SingleTile.Add(currentUnit, unitGridKey);
+		PrintTileContents(SingleTile);
+	}
+}
+
+void ACPP_GridManager::PrintTileContents(TMap<AActor*, FVector> tile)
+{
+	TArray<AActor*> actors;
+	TArray<FVector> locations;
+	tile.GenerateKeyArray(actors);
+	tile.GenerateValueArray(locations);
+
+	for (int i = 0; i < actors.Num(); i++)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, actors[i]->GetName());
+		GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, locations[i].ToString());
 	}	
 }
+
+void ACPP_GridManager::UpdateUnitGridPosition(AActor* unit)
+{
+	if (unit-ActorHasTag("Unit"))
+	{
+		AActor* currentUnit = unit;
+		TMap<AActor*, FVector> tile = getSingleTile();
+
+		if (tile.Find(currentUnit))
+		{
+			tile.Remove(currentUnit);
+
+			CalculateGridKey(currentUnit);
+
+			tile.Add(currentUnit);
+		}
+	}
+}
+
+
 
 
 
