@@ -13,20 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bc3cdae-c518-4f4b-8d7d-cc94107d0b6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/StrategyTemplate.Target.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_InfoBarMaster.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_InfoBarMaster.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/StrategyTemplate/StrategyTemplate.Build.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/StrategyTemplate/StrategyTemplate.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/StrategyTemplate/StrategyTemplate.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/StrategyTemplateEditor.Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyTemplate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownGameMode.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/Characters/BP_PlayerPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/Characters/BP_PlayerPawn.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/BP_HUD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/WB_MiniMap.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/WDG_HUD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StrategyTemplate.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/StrategyTemplate.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_InfoBarMaster.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_InfoBarMaster.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_PlayerUIMaster.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_PlayerUIMaster.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +197,7 @@
       <workItem from="1743197682378" duration="4481000" />
       <workItem from="1743245815500" duration="4652000" />
       <workItem from="1743263484642" duration="3736000" />
-      <workItem from="1743712620690" duration="2968000" />
+      <workItem from="1743712620690" duration="3545000" />
     </task>
     <task id="LOCAL-00001" summary="Moved RegisterActor into C++&#10;&#10;Planning on doing the same for UpdatePosition too but not sure yet">
       <option name="closed" value="true" />
