@@ -22,4 +22,7 @@ public:
 
 	UPROPERTY(Meta = (BindWidget))
 	class UTextBlock* amount;
+
+	UFUNCTION(BlueprintCallable)
+	void ChangeText();
 };
