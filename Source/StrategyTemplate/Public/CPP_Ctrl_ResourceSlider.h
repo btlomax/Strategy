@@ -17,5 +17,7 @@ class STRATEGYTEMPLATE_API UCPP_Ctrl_ResourceSlider : public UUserWidget
 public:
 	UPROPERTY(meta = (BindWidget))
 	class UBorder* sliderBackground;
-	
+
+	UPROPERTY(meta = (BindWidget))
+	class USlider* slider;
 };

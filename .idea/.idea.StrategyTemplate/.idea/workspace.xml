@@ -13,11 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bc3cdae-c518-4f4b-8d7d-cc94107d0b6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyTemplate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_Ctrl_SingleResource.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_Ctrl_SingleResource.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_InfoBarMaster.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_InfoBarMaster.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_PlayerUIMaster.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_PlayerUIMaster.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_PlayerUIMaster.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_PlayerUIMaster.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_Ctrl_ResourceSlider.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_Ctrl_ResourceSlider.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +196,7 @@
       <workItem from="1743245815500" duration="4652000" />
       <workItem from="1743263484642" duration="3736000" />
       <workItem from="1743712620690" duration="4674000" />
-      <workItem from="1743798758966" duration="1075000" />
+      <workItem from="1743798758966" duration="1627000" />
     </task>
     <task id="LOCAL-00001" summary="Moved RegisterActor into C++&#10;&#10;Planning on doing the same for UpdatePosition too but not sure yet">
       <option name="closed" value="true" />
