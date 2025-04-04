@@ -17,5 +17,8 @@ class STRATEGYTEMPLATE_API UCPP_PlayerUIMaster : public UUserWidget
 public:
 	UPROPERTY(Meta = (BindWidget))
 	class UCPP_InfoBarMaster* InfoBar;
+
+	UPROPERTY(Meta = (BindWidget))
+	class UCPP_Ctrl_ResourceSlider* ResourceSlider;
 	
 };
