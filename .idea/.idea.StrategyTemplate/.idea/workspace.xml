@@ -14,11 +14,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6bc3cdae-c518-4f4b-8d7d-cc94107d0b6b" name="Changes" comment="Added">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyTemplate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_Ctrl_SingleResource.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_Ctrl_SingleResource.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_InfoBarMaster.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_InfoBarMaster.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_GridManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_GridManager.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_PlayerUIMaster.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_PlayerUIMaster.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_Ctrl_ResourceSlider.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_Ctrl_ResourceSlider.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StrategyTemplate.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/StrategyTemplate.uproject" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,11 @@
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Epic Games/UE_5.4/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/StrategyTemplate/UHT/ResourceData.gen.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_Ctrl_SingleResource.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/StrategyTemplate/Private/GS_ResourceManager.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/StrategyTemplate/Private/ResourceManager.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_Ctrl_SingleResource.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/StrategyTemplate/Public/GS_ResourceManager.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/StrategyTemplate/Public/ResourceManager.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -203,7 +205,8 @@
       <workItem from="1743263484642" duration="3736000" />
       <workItem from="1743712620690" duration="4674000" />
       <workItem from="1743798758966" duration="1870000" />
-      <workItem from="1743844649642" duration="1980000" />
+      <workItem from="1743844649642" duration="2767000" />
+      <workItem from="1743884369642" duration="2391000" />
     </task>
     <task id="LOCAL-00001" summary="Moved RegisterActor into C++&#10;&#10;Planning on doing the same for UpdatePosition too but not sure yet">
       <option name="closed" value="true" />
