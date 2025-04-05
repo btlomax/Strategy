@@ -20,4 +20,6 @@ public:
 
 	UPROPERTY(meta = (BindWidget))
 	class USlider* slider;
+
+	
 };
