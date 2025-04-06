@@ -12,15 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bc3cdae-c518-4f4b-8d7d-cc94107d0b6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyTemplate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_Ctrl_ResourceSlider.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_Ctrl_ResourceSlider.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_Ctrl_SingleResource.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_Ctrl_SingleResource.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_InfoBarMaster.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_InfoBarMaster.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_PlayerUIMaster.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_PlayerUIMaster.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_Ctrl_SingleResource.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_Ctrl_SingleResource.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_Ctrl_SingleResource.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_Ctrl_SingleResource.h" afterDir="false" />
-    </list>
+    <list default="true" id="6bc3cdae-c518-4f4b-8d7d-cc94107d0b6b" name="Changes" comment="Added more functionality to SingleResource, working on getting them to set themselves to each resource on runtime" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,7 +204,7 @@
       <workItem from="1743798758966" duration="1870000" />
       <workItem from="1743844649642" duration="2767000" />
       <workItem from="1743884369642" duration="2868000" />
-      <workItem from="1743971579231" duration="4337000" />
+      <workItem from="1743971579231" duration="4689000" />
     </task>
     <task id="LOCAL-00001" summary="Moved RegisterActor into C++&#10;&#10;Planning on doing the same for UpdatePosition too but not sure yet">
       <option name="closed" value="true" />
@@ -238,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743887061954</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added more functionality to SingleResource, working on getting them to set themselves to each resource on runtime">
+      <option name="closed" value="true" />
+      <created>1743976863527</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743976863527</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +251,8 @@
     <MESSAGE value="Moved RegisterActor into C++&#10;&#10;Planning on doing the same for UpdatePosition too but not sure yet" />
     <MESSAGE value="Can change text now but not sure how to use it, yet!" />
     <MESSAGE value="Got ResourceManager structure set up, still getting my head around the whole thing though" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got ResourceManager structure set up, still getting my head around the whole thing though" />
+    <MESSAGE value="Added more functionality to SingleResource, working on getting them to set themselves to each resource on runtime" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more functionality to SingleResource, working on getting them to set themselves to each resource on runtime" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
