@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "ResourceData.h"
 #include "Blueprint/UserWidget.h"
 #include "CPP_Ctrl_SingleResource.generated.h"
 
@@ -23,6 +24,15 @@ public:
 	UPROPERTY(Meta = (BindWidget))
 	class UTextBlock* amount;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FResourceData AssignedResourceData;
+
 	UFUNCTION(BlueprintCallable)
-	void ChangeText();
+	void AssignResource(FResourceData resourceData);
+
+	UFUNCTION(BlueprintCallable)
+	void SetName(FString nameText);
+
+	UFUNCTION(BlueprintCallable)
+	void SetAmount(FString amountText);
 };

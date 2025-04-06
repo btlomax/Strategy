@@ -5,8 +5,18 @@
 
 #include "Components/TextBlock.h"
 
-void UCPP_Ctrl_SingleResource::ChangeText()
+void UCPP_Ctrl_SingleResource::AssignResource(FResourceData resourceData)
 {
-	name->SetText(FText::FromString("Farts"));
+	AssignedResourceData = resourceData;
+}
+
+void UCPP_Ctrl_SingleResource::SetName(FString nameText)
+{
+	name->SetText(FText::FromString(nameText));
+}
+
+void UCPP_Ctrl_SingleResource::SetAmount(FString amountText)
+{
+	amount->SetText(FText::FromString(amountText));
 }
 
