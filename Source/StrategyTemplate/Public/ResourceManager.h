@@ -13,6 +13,9 @@ class STRATEGYTEMPLATE_API UResourceManager : public UActorComponent
 {
 	GENERATED_BODY()
 
+// Need to get data table, then get data out into array.
+// Then, use array in InfoBar, iterate over it and for each resource control, assign name and amount
+
 public:	
 	// Sets default values for this component's properties
 	UResourceManager();
