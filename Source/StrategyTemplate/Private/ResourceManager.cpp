@@ -19,8 +19,7 @@ void UResourceManager::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-	
+	//"C:\Users\lomax\Documents\Unreal Projects\StrategyTemplate\Content\TopDown\Blueprints"
 }
 
 

@@ -9,7 +9,7 @@
  * 
  */
 USTRUCT(BlueprintType)
-struct STRATEGYTEMPLATE_API FResourceData
+struct STRATEGYTEMPLATE_API FResourceData : public FTableRowBase
 {
 	GENERATED_BODY()
 
@@ -22,4 +22,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float productionRate;
+
+	FResourceData()
+		: Name(NAME_None), Amount(0), productionRate(0.f)
+	{}
+
+	FResourceData(FName InName, int32 InAmount, float ProductionRate)
+		: Name(InName), Amount(InAmount), productionRate(ProductionRate)
+	{}
 };
