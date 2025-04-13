@@ -37,6 +37,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Resources")
 	int32 GetResource(FName ResourceName) const;
 
+	UFUNCTION(BlueprintCallable, Category = "Resources")
+	void GetDataTable();
+	
+
 private:
 	void UpdateResourceProduction(float DeltaTime);
 };

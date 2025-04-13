@@ -9,30 +9,8 @@ UResourceManager::UResourceManager()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
-	FSoftObjectPath TablePath(TEXT("/Script/Engine.DataTable'/Game/TopDown/Blueprints/DT_Resources.DT_Resources'"));
-	UDataTable* ResourceTable = Cast<UDataTable>(TablePath.TryLoad());
-
-	if (ResourceTable)
-	{
-		static const FString Context(TEXT("Resources"));
-		TArray<FName>RowNames = ResourceTable->GetRowNames();
-
-		for (FName RowName : RowNames)
-		{
-			FResourceData* Row = ResourceTable->FindRow<FResourceData>(RowName, Context);
-
-			if (Row)
-			{
-				UE_LOG(LogTemp, Display, TEXT("%s"), *Row->Name.ToString());
-				UE_LOG(LogTemp, Display, TEXT("%s"), Row->Amount);
-			}	
-		}	
-	}
-	else
-	{
-		UE_LOG(LogTemp, Display, TEXT("%s"), TEXT("Failed to load resource data"));
-	}
+	GetDataTable();
+	
 }
 
 
@@ -91,4 +69,31 @@ void UResourceManager::UpdateResourceProduction(float DeltaTime)
 	}
 }
 
+void UResourceManager::GetDataTable()
+{
+	FSoftObjectPath TablePath(TEXT("/Script/Engine.DataTable'/Game/TopDown/Blueprints/DT_Resources.DT_Resources'"));
+	UDataTable* ResourceTable = Cast<UDataTable>(TablePath.TryLoad());
+
+	if (ResourceTable)
+	{
+		static const FString Context(TEXT("Resources"));
+		TArray<FName>RowNames = ResourceTable->GetRowNames();
+
+		for (FName RowName : RowNames)
+		{
+			FResourceData* Row = ResourceTable->FindRow<FResourceData>(RowName, Context);
+
+			if (Row)
+			{
+				UE_LOG(LogTemp, Display, TEXT("%s"), *Row->Name.ToString());
+				Resources.Add(*Row);
+				//UE_LOG(LogTemp, Display, TEXT("%s"), Row->Amount);
+			}	
+		}	
+	}
+	else
+	{
+		UE_LOG(LogTemp, Display, TEXT("%s"), TEXT("Failed to load resource data"));
+	}
+}
 
