@@ -9,8 +9,6 @@ UResourceManager::UResourceManager()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-	GetDataTable();
-	
 }
 
 
@@ -18,8 +16,6 @@ UResourceManager::UResourceManager()
 void UResourceManager::BeginPlay()
 {
 	Super::BeginPlay();
-
-	//"C:\Users\lomax\Documents\Unreal Projects\StrategyTemplate\Content\TopDown\Blueprints"
 }
 
 
@@ -86,7 +82,9 @@ void UResourceManager::GetDataTable()
 			if (Row)
 			{
 				UE_LOG(LogTemp, Display, TEXT("%s"), *Row->Name.ToString());
-				Resources.Add(*Row);
+
+				if (!Resources.Contains(*Row))
+					Resources.Add(*Row);
 				//UE_LOG(LogTemp, Display, TEXT("%s"), Row->Amount);
 			}	
 		}	

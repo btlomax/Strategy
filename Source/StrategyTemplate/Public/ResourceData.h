@@ -23,6 +23,11 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float productionRate;
 
+	 bool operator==(const FResourceData& Other) const
+	{
+		return Name == Other.Name && Amount == Other.Amount;
+	}
+
 	FResourceData()
 		: Name(NAME_None), Amount(0), productionRate(0.f)
 	{}

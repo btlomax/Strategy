@@ -39,6 +39,8 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Resources")
 	void GetDataTable();
+
+	
 	
 
 private:

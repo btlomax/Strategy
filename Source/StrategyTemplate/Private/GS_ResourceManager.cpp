@@ -5,7 +5,7 @@
 
 AGS_ResourceManager::AGS_ResourceManager()
 {
-	resourceManager = CreateDefaultSubobject<UResourceManager>("ResourceManager");
+	//resourceManager = CreateDefaultSubobject<UResourceManager>("ResourceManager");
 }
 
 
