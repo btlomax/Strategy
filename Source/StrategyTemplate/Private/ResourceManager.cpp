@@ -16,6 +16,8 @@ UResourceManager::UResourceManager()
 void UResourceManager::BeginPlay()
 {
 	Super::BeginPlay();
+
+	Resources.Empty();
 }
 
 

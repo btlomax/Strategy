@@ -14,14 +14,17 @@
   <component name="ChangeListManager">
     <list default="true" id="6bc3cdae-c518-4f4b-8d7d-cc94107d0b6b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyTemplate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_GridManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_GridManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/Characters/BP_PlayerPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/Characters/BP_PlayerPawn.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_InfoBarMaster.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_InfoBarMaster.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_PlayerUIMaster.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/UI/Player/UWDG_PlayerUIMaster.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_Ctrl_SingleResource.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_Ctrl_SingleResource.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_InfoBarMaster.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_InfoBarMaster.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Private/GS_ResourceManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Private/GS_ResourceManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_PlayerUIMaster.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_PlayerUIMaster.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Private/ResourceManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Private/ResourceManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_Ctrl_SingleResource.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_Ctrl_SingleResource.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_InfoBarMaster.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_InfoBarMaster.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Public/ResourceData.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Public/ResourceData.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Public/ResourceManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Public/ResourceManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_PlayerUIMaster.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StrategyTemplate/Public/CPP_PlayerUIMaster.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StrategyTemplate.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/StrategyTemplate.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,23 +129,8 @@
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="cidr-memory-view://2" root0="FORCE_HIGHLIGHTING" />
-    <setting file="cidr-memory-view://3" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://1" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Epic Games/UE_5.4/Engine/Source/Developer/Apple/MetalShaderFormat/Private/MetalCompileShaderMSC.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Epic Games/UE_5.4/Engine/Source/Editor/AnimationEditor/Private/AnimationEditor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Epic Games/UE_5.4/Engine/Source/Runtime/Core/Public/Containers/Array.h" root0="FORCE_HIGHLIGHTING" />
@@ -160,6 +148,8 @@
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Epic Games/UE_5.4/Engine/Source/Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Epic Games/UE_5.4/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Epic Games/UE_5.4/Engine/Source/Runtime/UMG/Public/Components/TextBlock.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/StrategyTemplate/UHT/CPP_Ctrl_SingleResource.gen.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/StrategyTemplate/UHT/CPP_InfoBarMaster.gen.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/StrategyTemplate/UHT/ResourceData.gen.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_Ctrl_SingleResource.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/StrategyTemplate/Private/GS_ResourceManager.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -320,7 +310,8 @@
       <workItem from="1744059475848" duration="80000" />
       <workItem from="1744540887896" duration="2135000" />
       <workItem from="1744554579563" duration="2456000" />
-      <workItem from="1744573719993" duration="2619000" />
+      <workItem from="1744573719993" duration="2779000" />
+      <workItem from="1744660270422" duration="4588000" />
     </task>
     <task id="LOCAL-00001" summary="Moved RegisterActor into C++&#10;&#10;Planning on doing the same for UpdatePosition too but not sure yet">
       <option name="closed" value="true" />
@@ -394,7 +385,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744555389709</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="OK can get to data tables and access data.&#10;&#10;Now I need to generate a single resource control for each resource entry, and then add them to the info bar">
+      <option name="closed" value="true" />
+      <created>1744576892686</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1744576892686</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +412,8 @@
     <MESSAGE value="Some notes for myself..." />
     <MESSAGE value="I'm getting there I think, I need to fill the resources array from the data table. It's finding the table, but I'm struggling to access it in Blueprint" />
     <MESSAGE value="Resources data table accessible in Blueprint now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resources data table accessible in Blueprint now" />
+    <MESSAGE value="OK can get to data tables and access data.&#10;&#10;Now I need to generate a single resource control for each resource entry, and then add them to the info bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="OK can get to data tables and access data.&#10;&#10;Now I need to generate a single resource control for each resource entry, and then add them to the info bar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -424,14 +424,9 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/StrategyTemplate/Private/ResourceManager.cpp</url>
-          <line>69</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/StrategyTemplate/Private/ResourceManager.cpp</url>
-          <line>81</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/Source/StrategyTemplate/Private/CPP_PlayerUIMaster.cpp</url>
+          <line>17</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

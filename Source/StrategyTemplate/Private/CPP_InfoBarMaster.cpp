@@ -3,9 +3,11 @@
 
 #include "CPP_InfoBarMaster.h"
 
+#include "ResourceData.h"
+
 class UCPP_Ctrl_SingleResource;
 
-void UCPP_InfoBarMaster::ChangeColour()
+void UCPP_InfoBarMaster::GenerateResourceControls()
 {
-	GEngine->AddOnScreenDebugMessage(0, 5, FColor::Red, "Changing colour");
+	
 }

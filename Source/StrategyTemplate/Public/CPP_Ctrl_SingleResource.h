@@ -31,8 +31,8 @@ public:
 	void AssignResource(FResourceData resourceData);
 
 	UFUNCTION(BlueprintCallable)
-	void SetName(FString nameText);
+	void SetName(FText nameText);
 
 	UFUNCTION(BlueprintCallable)
-	void SetAmount(FString amountText);
+	void SetAmount(FText amountText);
 };

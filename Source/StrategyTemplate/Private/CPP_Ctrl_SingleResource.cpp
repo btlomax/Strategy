@@ -8,15 +8,18 @@
 void UCPP_Ctrl_SingleResource::AssignResource(FResourceData resourceData)
 {
 	AssignedResourceData = resourceData;
+	
+	SetName(FText::FromName(resourceData.Name));
+	SetAmount(FText::AsNumber(resourceData.Amount));
 }
 
-void UCPP_Ctrl_SingleResource::SetName(FString nameText)
+void UCPP_Ctrl_SingleResource::SetName(FText nameText)
 {
-	name->SetText(FText::FromString(nameText));
+	name->SetText(nameText);
 }
 
-void UCPP_Ctrl_SingleResource::SetAmount(FString amountText)
+void UCPP_Ctrl_SingleResource::SetAmount(FText amountText)
 {
-	amount->SetText(FText::FromString(amountText));
+	amount->SetText(amountText);
 }
 

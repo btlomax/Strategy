@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "ResourceManager.h"
 #include "Blueprint/UserWidget.h"
 #include "Components/Border.h"
 #include "CPP_InfoBarMaster.generated.h"
@@ -18,6 +19,12 @@ public:
 	UPROPERTY(meta = (BindWidget))
 	class UBorder* LTBorder;
 
+	UPROPERTY(meta = (BindWidget))
+	class UHorizontalBox* ResourcesHolder;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Resources", meta = (ExposeOnSerial = true))
+	UResourceManager* ResourceManager;
+	
 	UFUNCTION(BlueprintCallable)
-	void ChangeColour();
+	void GenerateResourceControls();
 };
