@@ -8,9 +8,7 @@
 UCPP_PlayerUIMaster::UCPP_PlayerUIMaster(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
-	// Add code for creating infobar
 	
-	//In infobar constructor, add code for creating resource controls
 }
 
 void UCPP_PlayerUIMaster::NativeConstruct()
@@ -22,14 +20,16 @@ void UCPP_PlayerUIMaster::NativeConstruct()
 		InfoBarRef = CreateWidget<UCPP_InfoBarMaster>(GetWorld(), InfoBarClass);
 		if (InfoBarRef)
 		{
-			InfoBarRef->ResourceManager = ResourceManager;
+			InfoBarRef->InfoBarResourceManager = ResourceManager;
 			InfoBarRef->AddToViewport();
 		}
 	}
 }
 
-void UCPP_PlayerUIMaster::InitUI(UResourceManager* SetResourceManager)
+UResourceManager* UCPP_PlayerUIMaster::InitUI(UResourceManager* SetResourceManager)
 {
 	ResourceManager = SetResourceManager;
+
+	return ResourceManager;
 }
 

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "CPP_Ctrl_ResourceSlider.h"
 #include "Blueprint/UserWidget.h"
 #include "CPP_PlayerUIMaster.generated.h"
 
@@ -24,7 +25,7 @@ public:
 	virtual void NativeConstruct() override;
 
 	UFUNCTION(BlueprintCallable)
-	void InitUI(UResourceManager* SetResourceManager);
+	UResourceManager* InitUI(UResourceManager* SetResourceManager);
 	
 	// The class for the InfoBar (set in Blueprint)
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
@@ -34,11 +35,9 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "Resources")
 	UResourceManager* ResourceManager;
 
-	UPROPERTY(Meta = (BindWidget))
-	class UCPP_Ctrl_ResourceSlider* ResourceSlider;
 
 protected:
 	// Keeping a reference to the spawned InfoBar
 	UPROPERTY()
-	UCPP_InfoBarMaster* InfoBarRef;	
+	UCPP_InfoBarMaster* InfoBarRef;
 };
