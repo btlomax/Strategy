@@ -4,12 +4,14 @@
 #include "CPP_InfoBarMaster.h"
 
 #include "ResourceData.h"
+#include "Components/HorizontalBox.h"
+#include "Components/TextBlock.h"
+#include "Engine/TextureRenderTarget2D.h"
 
 class UCPP_Ctrl_SingleResource;
 
 UCPP_InfoBarMaster::UCPP_InfoBarMaster(const FObjectInitializer& ObjectInitializer): Super(ObjectInitializer)
 {
-	GenerateResourceControls();
 }
 
 
@@ -28,8 +30,12 @@ void UCPP_InfoBarMaster::NativeConstruct()
 	
 void UCPP_InfoBarMaster::GenerateResourceControls()
 {
-	for (FResourceData resources : InfoBarResourceManager->Resources)
+	for (int i = 0; i < InfoBarResourceManager->Resources.Num(); i++)
 	{
-		CreateWidget<UCPP_Ctrl_SingleResource>(GetWorld(),SingleResourceInstance)->AddToViewport();
+		SingleResourceRef = CreateWidget<UCPP_Ctrl_SingleResource>(GetWorld(),SingleResourceInstance);
+
+		SingleResourceRef->AssignResource(InfoBarResourceManager->Resources[i]);
+
+		ResourcesHolder->AddChild(SingleResourceRef);
 	}
 }
