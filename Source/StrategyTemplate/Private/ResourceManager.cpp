@@ -67,6 +67,9 @@ void UResourceManager::UpdateResourceProduction(float DeltaTime)
 	}
 }
 
+
+/// This method finds the data table and reads the data out of it in an array of FResourceData, which is a custom struct
+/// This is then passed to the UI where the individual FResourceData entries are used to populate the UI
 void UResourceManager::GetDataTable()
 {
 	FSoftObjectPath TablePath(TEXT("/Script/Engine.DataTable'/Game/TopDown/Blueprints/DT_Resources.DT_Resources'"));
